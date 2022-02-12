@@ -20,14 +20,14 @@ fun Detail(navController: NavController, name: String) {
          Column(modifier = Modifier.fillMaxSize(),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center) {
-            Text(text = "Welcome $name", modifier = Modifier, fontSize = 30.sp)
+            Text(text = "Welcome $name", modifier = Modifier, fontSize = 25.sp)
 
             Spacer(modifier = Modifier
                .height(30.dp)
                .fillMaxWidth())
 
             Button(onClick = { navController.popBackStack() }) {
-               Text(text = "Exit", fontSize = 30.sp)
+               Text(text = "Exit", fontSize = 25.sp)
             }
          }
       }

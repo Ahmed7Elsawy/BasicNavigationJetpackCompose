@@ -29,8 +29,8 @@ fun Home(navController: NavController) {
             OutlinedTextField(
                value = name,
                onValueChange = { name = it },
-               label = { Text("Name", fontSize = 30.sp) },
-               textStyle = TextStyle (fontSize = 30.sp),
+               label = { Text("Name", fontSize = 20.sp) },
+               textStyle = TextStyle (fontSize = 25.sp),
                modifier = Modifier.padding(20.dp)
             )
 
@@ -39,7 +39,7 @@ fun Home(navController: NavController) {
                .fillMaxWidth())
 
             Button(onClick = { navController.navigate("detail/$name") }) {
-               Text(text = "Enter", fontSize = 30.sp)
+               Text(text = "Enter", fontSize = 25.sp)
             }
          }
       }
